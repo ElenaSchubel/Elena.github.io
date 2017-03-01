@@ -55,7 +55,7 @@ p{
    display: -webkit-flex;
    list-style: none;
 }
-#nav{
+.nav{
    display: -webkit-flex;
    list-style: none;
    margin-top: 4%;
@@ -100,6 +100,12 @@ p{
   display: -webkit-flex;
   margin-left: 1.5%;
   margin-bottom: 5%;
+}
+
+#responsive{
+
+  height:25%;
+  width:  23%;
 }
 
 .margin{
