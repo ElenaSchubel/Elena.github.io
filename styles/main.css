@@ -1,12 +1,15 @@
+/* Header  and Footer  */
 .blue {
 height: 100px;
 background-color: rgba(0, 166, 183, 0.55);
 }
 
-.name{
+/* Name in Header*/
+#name{
   list-style: none;
 }
 
+/* Link back to Index Page*/
 #index{
   font-family:'Playfair Display', monospace;
   color:#842e2e;
@@ -14,6 +17,7 @@ background-color: rgba(0, 166, 183, 0.55);
   font-size: 3.5em;
   padding-left: 0.2%;
 }
+
 
 li,a {
   text-decoration: none;
@@ -50,11 +54,13 @@ p{
 
 }
 
-
+/* Navigation in Footer Bar */
 #blog-nav{
    display: -webkit-flex;
    list-style: none;
 }
+
+/* Navigation on the Main Index Page */
 .nav{
    display: -webkit-flex;
    list-style: none;
@@ -62,13 +68,14 @@ p{
 
 }
 
-
+/* nav links in the footer bar */
 .button1 {
   font-size: 25px;
   color:#842e2e;
   margin-right: 0.5em;
 }
 
+/* nav links on the main index page */
 .button2 {
   margin-right: 5%;
   font-size: 25px;
@@ -76,6 +83,7 @@ p{
 
 }
 
+/*Pictures */
 #reflection{
   margin-left: 2%;
   margin-right: 1.5%;
@@ -114,6 +122,7 @@ p{
   width:  23%;
 }
 
-.margin{
+/*box model picture margin*/
+#margin{
   margin-left: 2%;
 }
