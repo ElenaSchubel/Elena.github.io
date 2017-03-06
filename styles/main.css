@@ -215,20 +215,3 @@ height: 33em;
 @media only screen and (max-width: 500px) {
   .prev, .next,.text {font-size: 11px}
 }
-
-/* for carousel
-.image-slider-wrapper{
-    overflow: hidden;
-}
-
-#image_slider{
-    position: relative;
-    height: 280px;
-    padding:0;
-}
-
-#image_slider li{
-    max-width: 100%;
-    float:left;
-    list-style: none;
-} */
