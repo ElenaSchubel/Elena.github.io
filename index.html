@@ -30,56 +30,56 @@
 
 
 <!--Only way I could find to get the pictures to automatically load -->
-<body onLoad="showSlides();">
+<body onLoad=" carousel(); ">
   <!--carousel-->
   <h2 id='featured'>Featured Blogs </h2>
   <section class='carousel'>
   <div class="slides fade">
   <div class="imagesize">
   <a    href="blog/c1-reflection-blog.html"/>
-  <img  src="images/who-am-i-reflection-skills-2-728.jpg"/  onmouseover="pauseSlides();" onmouseout="startSlides()"></a></div>
+  <img  src="images/who-am-i-reflection-skills-2-728.jpg"/ ></a></div>
   <div class="text">Reflection</div>
   </div>
 
   <div class="slides fade">
     <div class="imagesize">
     <a    href="blog/c1-time-and-habits-blog.html"/>
-    <img  src="images/time.jpg"  onmouseover="pauseSlides();" onmouseout="startSlides()"/></a></div>
+    <img  src="images/time.jpg"/></a></div>
     <div class="text">Time and Habits </div>
   </div>
 
   <div class="slides fade">
     <div class="imagesize">
     <a    href='blog/t2-html-css-dom-p2.html'/>
-    <img  src='images/responsive-design2.jpg' alt='responsive webdesign'  onmouseover="pauseSlides();" onmouseout="startSlides()"></a></div>
+    <img  src='images/responsive-design2.jpg' alt='responsive webdesign'></a></div>
     <div class="text">Techincal Blog 2</div>
   </div>
 
     <div class="slides fade">
       <div class="imagesize">
       <a    href='blog/t2-html-css-dom-p1.html'/></li>
-      <img  src='images/boxify.jpg' alt='Html Css and boxify design'  onmouseover="pauseSlides();" onmouseout="startSlides()"/></a></div>
+      <img  src='images/boxify.jpg' alt='Html Css and boxify design' /></a></div>
       <div class="text">Techincal Blog</div>
     </div>
 
     <div class="slides fade">
       <div class="imagesize">
       <a    href='blog/c2-emotional-intelligence.html'/></li>
-      <img  src='images/emotional-intel.jpg' alt='emotional intelligence'  onmouseover="pauseSlides();" onmouseout="startSlides()"/></a></div>
+      <img  src='images/emotional-intel.jpg' alt='emotional intelligence'/></a></div>
       <div class="text">Emotional intelligence</div>
     </div>
 
-    <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
-    <a class="next" onclick="plusSlides(1)" >&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1)"onmouseover="pauseSlides();" onmouseout="startSlides()" >&#10094;</a>
+    <a class="next" onclick="plusSlides(1)" onmouseover="pauseSlides();" onmouseout="startSlides()">&#10095;</a>
     </div>
     <br>
 
   <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)" onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
-  <span class="dot" onclick="currentSlide(2)" onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
-  <span class="dot" onclick="currentSlide(3)" onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
-  <span class="dot" onclick="currentSlide(4)" onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
-  <span class="dot" onclick="currentSlide(5)" onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
+  <span onclick="currentSlide(1)"class="dot"  onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
+  <span onclick="currentSlide(2)"class="dot"  onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
+  <span onclick="currentSlide(3)"class="dot"  onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
+  <span onclick="currentSlide(4)"class="dot"  onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
+  <span onclick="currentSlide(5)"class="dot"  onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
   </div>
   </section>
 

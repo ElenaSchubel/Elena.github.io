@@ -115,9 +115,6 @@ small{
 }
 /* Carousel  container */
 
-section .carousel{
-   background-color:   black;
-}
 .carousel{
   max-width: 1000px;
   position: relative;
@@ -138,26 +135,28 @@ section .carousel{
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: #fff;
   font-weight: bold;
   font-size: 18px;
   transition: 0.4s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius:50%;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 50%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+  color: #fff;
+
 }
 
 /* Caption text */
@@ -185,12 +184,14 @@ height: 33em;
  margin: 0 2px;
  background-color: #bbb;
  border-radius: 50%;
+ border: 1px solid #ccc;
  display: inline-block;
  transition: background-color 0.4s ease;
 }
 
 .active, .dot:hover {
   background-color: #717171;
+  border-color: #f44336;
 }
 
 /* Fading animation */
