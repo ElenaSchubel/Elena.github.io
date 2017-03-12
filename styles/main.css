@@ -1,0 +1,101 @@
+.heading {
+  display: inline-flex;
+  width: 100%;
+  height: 7em;
+}
+
+.page-title {
+  color: red;
+  padding: 5px 10px;
+  margin-right: 5em;
+  float: left;
+  position: static;;
+}
+.page-description {
+  color:  orange;
+  padding: 5px 15px;
+  float: right;
+  position: static;
+}
+.my-name {
+  color:  orange;
+  padding: 5px 5px;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+/* Smartphones */
+@media (min-width: 320px) and (max-width: 479px){
+
+
+
+}
+
+/* tablets */
+@media (min-width: 480px) and (max-width: 767px){
+
+
+/* tablets and Laptops */
+@media (min-width: 768px) and (max-width: 1279px){
+  .page-title {
+    margin: auto;
+    font-size: auto;
+  }
+
+
+}
+
+@media (min-width: 12780px) and (max-width: 1999px){
+
+
+
+}

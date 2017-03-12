@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <meta charset="UTF-8">
+<head>
+  <title>ELena's Blog</title>
+  <meta charset="UTF-8">
+  <!-- New Font -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <!-- Skeleton CSS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"  rel="stylesheet" type="text/css">
+  <!-- My CSS -->
+  <link href="styles/main.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="main.js" ></script>
 
-  </head>
-  <body>
+</head>
+<body>
+  <section class='heading' >
+    <h1 class='page-title'> Name of the Web </h1>
 
-  </body>
+    <h3 class='page-description'> Journey of Becoming a Web Developer </h3>
+  </section>
+
+
+  <header class="banner">
+    <nav>
+      <div class="dropdown"  >
+        <button class="dropbtn"href="index.html" >home</button>
+        <button onclick="myFunction()" class="dropbtn">Blogs</button>
+        <div id="myDropdown" class="dropdown-content">
+      <a href="blog/c1-reflection-blog.html">Reflection</a>
+      <a href="blog/c1-time-and-habits-blog.html">Time and Habits</a>
+      <a href="blog/t2-html-css-dom-p2.html">Techincal Blog 2</a>
+      <a href="blog/t2-html-css-dom-p1.html">Techincal Blog 1</a>
+      <a href="blog/c2-emotional-intelligence.html">Emotional Intelligence</a>
+        </div>
+      <button class="dropbtn" href="#">about</button>
+        <h4 class='my-name'> Elena Schubel</h>
+    </div>
+    </nav>
+  </header>
+
+
+
+
+<!--Only way I could find to get the pictures to automatically load -->
+<body onLoad=" carousel(); ">
+  <!--carousel-->
+  <h2 id='featured'>Featured Blogs </h2>
+  <section class='carousel'>
+  <div class="slides fade">
+  <div class="imagesize">
+  <a    href="blog/c1-reflection-blog.html"/>
+  <img  src="images/who-am-i-reflection-skills-2-728.jpg"/ ></a></div>
+  <div class="text">Reflection</div>
+  </div>
+
+  <div class="slides fade">
+    <div class="imagesize">
+    <a    href="blog/c1-time-and-habits-blog.html"/>
+    <img  src="images/time.jpg"/></a></div>
+    <div class="text">Time and Habits </div>
+  </div>
+
+  <div class="slides fade">
+    <div class="imagesize">
+    <a    href='blog/t2-html-css-dom-p2.html'/>
+    <img  src='images/responsive-design2.jpg' alt='responsive webdesign'></a></div>
+    <div class="text">Techincal Blog 2</div>
+  </div>
+
+    <div class="slides fade">
+      <div class="imagesize">
+      <a    href='blog/t2-html-css-dom-p1.html'/></li>
+      <img  src='images/boxify.jpg' alt='Html Css and boxify design' /></a></div>
+      <div class="text">Techincal Blog</div>
+    </div>
+
+    <div class="slides fade">
+      <div class="imagesize">
+      <a    href='blog/c2-emotional-intelligence.html'/></li>
+      <img  src='images/emotional-intel.jpg' alt='emotional intelligence'/></a></div>
+      <div class="text">Emotional intelligence</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)"onmouseover="pauseSlides();" onmouseout="startSlides()" >&#10094;</a>
+    <a class="next" onclick="plusSlides(1)" onmouseover="pauseSlides();" onmouseout="startSlides()">&#10095;</a>
+    </div>
+    <br>
+
+  <div style="text-align:center">
+  <span onclick="currentSlide(1)"class="dot"  onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
+  <span onclick="currentSlide(2)"class="dot"  onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
+  <span onclick="currentSlide(3)"class="dot"  onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
+  <span onclick="currentSlide(4)"class="dot"  onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
+  <span onclick="currentSlide(5)"class="dot"  onmouseover="pauseSlides();" onmouseout="startSlides()"></span>
+  </div>
+  </section>
+
+</body>
 </html>
