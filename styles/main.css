@@ -304,9 +304,9 @@ small{
   font-size: 18px;
 }
 .wireframe {
-  display: -webkit-flex;
-  width: 50%;
-  height: 50%;
+
+  width: 60%;
+
 }
 
 
@@ -323,7 +323,7 @@ small{
     color: red;
     padding: 5px 5px;
     margin-right: 0em;
-    font-size: 1.6em;
+    font-size: 2em;
     float: left;
 
   }
@@ -331,7 +331,7 @@ small{
     color:  orange;
     padding: 5px 5px;
     margin-left: 0em;
-    font-size: 0.7em;
+    font-size: 1em;
     float: right;
 
   }
