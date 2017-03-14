@@ -1,124 +1,172 @@
 .heading {
+  font-family: 'Playfair Display'; monospace;
   display: inline-flex;
   width: 100%;
   height: 7em;
 }
 
 .page-title {
-  color: red;
+  font-weight: bold;
+  color:  #FD0E35;
   padding: 5px 10px;
-  margin-right: .5em;
+  margin-right: 2.5em;
   font-size: 3.2em;
   float: left;
   position: static;
 }
 .page-description {
-  color:  orange;
+  color:  #FFAA1D;
   padding: 5px 15px;
-  margin-left: 0.5em;
+  margin-left: .5em;
   font-size: 2.1em;
   float: right;
   position: static;
 }
-.my-name {
-  color:  orange;
-  padding: 5px 5px;
-}
+
+
 
 .banner {
-height: 6em;
-background-color: rgba(0, 166, 183, 0.55);
+width: 100%;
+height: 4.7em;
+background: linear-gradient(to bottom right, #000066 0%, #339966 100%);
 
 }
 
 
-/* Dropdown Button */
-.dropbtn {
-    background-color: #4CAF50;
+.container1 {
+  box-sizing: border-box;
+  text-decoration: none;
+  display: -webkit-inline-flex;
+  font-family: Arial;
+
+}
+
+.container1 a {
+
     color: white;
     text-align: center;
+    text-decoration: none;
+
+}
+.btn1 {
+  font-size: 18px;
+  padding: 21px 20px;
+  font-weight: 600;
+  color: red;
+  height: 1.6em;
+}
+
+.btn1:hover{
+    background-color: #3ab7ab;
+}
+/* Dropdown Button */
+.dropbtn {
+  font-family: Arial;
+    background-color: transparent;
+    color: white;
+    height: 4.5em;
+    padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-
-}
-
-/* Dropdownmenu  */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-    position: absolute;;
+    position: relative;
     display: inline-block;
 }
 
-/* Dropdown Content */
+/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-}
-/*for the home and about links not really butons */
-.btn1 {
-  background-color:  hsla(0, 0%, 100%, 0);;
-  color: white;
-  padding: 12px 16px;
-  text-align: center;
-  font-size: 16px;
-  border-radius: 5px;
-  display: -webkit-inline-flex;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #f1f1f1
-}
-
-/* for JS function for dropmenu */
-.show {
-  display:block;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
+
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-
-}
-/*might get rid of as it similiar to what I want the btn1 to be*/
-.container1 {
-float: left;
-font-size: 16px;
-color: white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-}
-/*hover for container1 */
-.container1 a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
 }
 
-/* Slideshow*/
-.carousel{
-  max-width: 1000px;
+/* Change color of dropdown links on hover */
+ .dropdown-content a:hover
+{background-color: #3ab7ab;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3ab7ab;
+}
+
+.my-name {
+  font-family: "Vidaloka",monospace;
+  margin-left: 10px;
+  color:  #d02d64;
+  padding: 20px 5px;
+  float: right;
+}
+
+/*background color blogs */
+.container-background{
+background-color: #b1cbbb;
+padding: 4em;
+}
+
+.main-content {
+  background-color: white;
   position: relative;
-  margin: auto;
-  padding:20px;
+    margin: auto;
+  padding: 20px;
   border:3px solid gray;
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
   box-sizing:border-box;
 
 }
-/*
+
+
+
+
+/* Slideshow and background color for Index*/
+.container-main-background{
+background-color: #b1cbbb;
+padding-bottom: 4em;
+}
+
+#featured {
+  font-family: "Vidaloka",monospace;
+  padding: 5px;
+  text-align: left;
+  color: #FD0E35;
+
+}
+
+
+.carousel{
+  background:#daebe8;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  border:3px solid gray;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+
+}
+
 .slides {
     display: none;
 }
@@ -127,7 +175,7 @@ text-decoration: none;
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -135,13 +183,13 @@ text-decoration: none;
   font-weight: bold;
   font-size: 18px;
   transition: 0.4s ease;
-  border-radius:50%;
+  border-radius:10%;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 50%;
+  right: 20px;
+  border-radius: 10%;
 }
 
 
@@ -152,10 +200,13 @@ text-decoration: none;
 }
 
 
+
 .text {
-  color: #138c77;
+  color: #3c4e19;
+  font-weight: 300;
   font-size: 18px;
-  padding: 8px 12px;
+  margin-left: -20px;
+  margin-bottom: 27em;
   position: absolute;
   bottom: 80px;
   width: 100%;
@@ -165,7 +216,7 @@ text-decoration: none;
 /* Image sizes for slidshow */
 .imagesize img{
 width: 100%;
-height: 33em;
+height: 30em;
 }
 
 /* The dots */
@@ -173,7 +224,7 @@ height: 33em;
  cursor:pointer;
  height: 13px;
  width: 13px;
- margin: 0 2px;
+ margin: 10px 2px;
  background-color: #bbb;
  border-radius: 50%;
  border: 1px solid #ccc;
@@ -183,7 +234,7 @@ height: 33em;
 
 .active, .dot:hover {
   background-color: #717171;
-  border-color: #f44336;
+
 }
 
 /* Fading animation */
@@ -215,7 +266,54 @@ height: 33em;
 
 
 
-@media only screen and (min-width: 771px) and (max-width: 1079px){
+
+
+li,a {
+  text-decoration: none;
+  font-size: 16px;
+  padding-left: 5px;
+
+}
+
+.blog-heading{
+
+  text-align: center;
+  color:#FD0E35;
+  font-family: 'Playfair Display',monospace;
+  margin:  40px;
+}
+
+
+
+h2{
+    padding-left: 10px;
+    font-size: 2.5em;
+    color:#b1cbbb;
+    font-family: 'Playfair Display',serif;
+}
+
+h3{
+  text-align: center;
+  color:#b1cbbb;
+  font-family:'Playfair Display',serif;
+}
+
+p{
+  padding-left:  20px;
+  padding-right:  20px;
+  font-size:  18px;
+  font-family:  'Vidaloka',sans-serif;;
+
+}
+
+small{
+  float: right;
+  margin: 25px;
+  font-size: 18px;
+}
+
+
+@media only screen and (min-width: 550px) and (max-width: 1079px){
   .page-title {
     color: red;
     padding: 5px 5px;
